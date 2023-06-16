@@ -20,12 +20,12 @@ Practical Use Case: Data visualization applications like this are incredibly pow
 
 4. Clone the repository:
 ```bash
-git clone https://github.com/username/MinimalDockerStreamlitApp.git
+git clone https://github.com/jsulopzs/docker-streamlit-plotly-app.git
 ```
 
 5. Navigate into the project directory:
 ```bash
-cd MinimalDockerStreamlitApp
+cd docker-streamlit-plotly-app
 ```
 
 6. Open the project in VSCode:
