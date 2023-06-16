@@ -2,12 +2,13 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+st.title('International Development: GDP & Life Expectancy Relationship')
+
 df = pd.read_excel('data/gampinder.xlsx')
 
 with st.sidebar:
     year = st.selectbox('Seleccione un año', df.year.unique())
 
-print(year)
 mask_year = df.year == year
 df_year = df[mask_year]
 
