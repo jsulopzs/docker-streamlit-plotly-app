@@ -4,6 +4,8 @@ Welcome to the Minimal Docker + Streamlit App repository! This application serve
 
 Practical Use Case: Data visualization applications like this are incredibly powerful tools in the world of data science and analytics. They enable users to gain a quick and in-depth understanding of the underlying patterns and trends in data. The app we've created here can be used by researchers, analysts, students or anyone interested in exploring socio-economic trends globally. Additionally, the Docker + Streamlit combination provides an efficient way to develop, deploy, and scale Python-based data applications, ensuring consistency across different environments.
 
+---
+
 ## Setup
 
 ### Environment
@@ -16,7 +18,7 @@ Practical Use Case: Data visualization applications like this are incredibly pow
 
 3. Install VSCode Extensions:
    - Docker: Makes it easier to create, manage, and debug containerized applications. Install the Docker VSCode extension [here](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker).
-   - Remote - Containers: Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set. Install the Remote - Containers VSCode extension [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
+   - Dev Containers: Open any folder or repository inside a Docker container and take advantage of Visual Studio Code's full feature set. Install the Dev Containers VSCode extension [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers).
 
 4. Clone the repository:
 ```bash
@@ -43,7 +45,7 @@ Once you have installed Docker, VSCode and necessary extensions, follow these st
    - On macOS: Pressing `CMD` + `SHIFT` + `P`
    - On Windows: Pressing `CONTROL` + `SHIFT` + `P`
 
-2. Type `Remote-Containers: Reopen in Container` in the command palette and hit `ENTER`. This will start the process of building your Docker container based on the specifications in your `devcontainer.json` and `Dockerfile`. 
+2. Type `Dev Containers: Rebuild and Reopen in Container` in the command palette and hit `ENTER`. This will start the process of building your Docker container based on the specifications in your `devcontainer.json` and `Dockerfile`. 
 
 3. VSCode will then rebuild and launch your Docker container. This process can take a few minutes the first time, as Docker needs to download and install all required dependencies in the Dockerfile. Subsequent launches will be significantly faster.
 
