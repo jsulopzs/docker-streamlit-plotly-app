@@ -1,7 +1,7 @@
 # Part 1
 import pandas as pd
 
-df = pd.read_excel('data/gampinder.xlsx')
+df = pd.read_excel('../data/gampinder.xlsx')
 
 mask_year = df.year == 2007
 df_year = df[mask_year]

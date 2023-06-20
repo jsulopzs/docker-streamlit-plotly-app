@@ -1,8 +1,6 @@
 ARG VARIANT="3.9"
 FROM mcr.microsoft.com/vscode/devcontainers/python:0-${VARIANT}
 
-WORKDIR /app
-
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
@@ -12,5 +10,5 @@ RUN apt-get update && apt-get install -y \
 
 COPY . .
 
-RUN pip3 install -r app/requirements.txt
+RUN pip3 install -r requirements.txt
 RUN python3 -m ipykernel install --user
