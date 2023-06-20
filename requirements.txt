@@ -3,3 +3,4 @@ openpyxl
 plotly
 streamlit
 ipykernel
+nbformat>=4.2.0

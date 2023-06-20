@@ -29,7 +29,8 @@
 		"ms-toolsai.jupyter-keymap",
 		"ms-toolsai.jupyter-renderers",
 		"vscode-icons-team.vscode-icons",
-		"ms-azuretools.vscode-docker"
+		"ms-azuretools.vscode-docker",
+		"Rubymaniac.vscode-paste-and-indent"
 	],
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
