@@ -1,19 +1,19 @@
 import pandas as pd
-import streamlit as st
+
+df_countries = pd.read_excel('../data/gampinder.xlsx')
+
 import plotly.express as px
 
-st.title('International Development: GDP & Life Expectancy Relationship')
-
-df = pd.read_excel('data/gampinder.xlsx')
+import streamlit as st
 
 with st.sidebar:
-    year = st.selectbox('Seleccione un año', df.year.unique())
+    year = st.selectbox(label='Select year', options=df_countries.year.unique())
 
-mask_year = df.year == year
-df_year = df[mask_year]
+mask_year = df_countries.year == year
+df_year = df_countries[mask_year]
 
 fig = px.scatter(
-    data_frame=df_year, x='gdpPercap', y='lifeExp', hover_name='country',
-    color='continent', facet_col='continent', facet_col_wrap=3, size='pop')
+    data_frame=df_year, x='gdpPercap', y='lifeExp',
+    color='continent', size='pop', hover_name='country')
 
 st.plotly_chart(fig)
