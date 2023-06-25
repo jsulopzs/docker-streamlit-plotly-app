@@ -1,6 +1,6 @@
 # Minimal Docker + Streamlit App
 
-![](./src/screenshot.png)
+![](./src/demo.gif)
 
 Welcome to the Minimal Docker + Streamlit App repository! This application serves as an example of how to create a lightweight, containerized Streamlit application. Our project leverages the Gapminder dataset to visually explore the relationship between a country's GDP per capita and life expectancy over time. This use case serves as a perfect demonstration of Streamlit's powerful capability to convert Python scripts into shareable web apps.
 
