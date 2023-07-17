@@ -5,9 +5,7 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"context": "..",
-		"args": {
-			"VARIANT": "3.10", // Set Python version here
-		}
+		"args": {}
 	},
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
